@@ -3,130 +3,132 @@
 <head>
   <meta charset="utf-8">
   <title>Ansioluettelo – Jami Passi</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <header>
-    <img src="jamikuva.jpg" alt="Pic of me" class="profile-pic">
-    <div>
-      <h1>Jami Passi</h1>
-      <p>Tietojenkäsittelytieteet & Taloustiede | Sisällöntuotanto & Markkinointi | Piano & Musiikki</p>
+
+<header class="header">
+  <img src="jamikuva.jpg" alt="Kuva Jami Passista" class="profile-pic">
+
+  <div class="header-text">
+    <h1>Jami Passi</h1>
+    <p class="tagline">
+      Tietojenkäsittelytieteet • Sisällöntuotanto & Markkinointi • Teknologia & Luovuus
+    </p>
+
+    <div class="header-links">
+      <a href="#contact" class="btn-primary">Ota yhteyttä</a>
+      <a href="https://www.linkedin.com/in/jami-passi/" target="_blank" class="btn-secondary">LinkedIn</a>
     </div>
-  </header>
+  </div>
+</header>
 
-  <section id="about">
-    <h2>Tietoa minusta</h2>
-    <p>Olen 21-vuotias, toisen vuoden tietojenkäsittelytieteiden opiskelija sekä sisällöntuotannosta, markkinoinnista,  taloustieteestä ja teknologiasta kiinnostunut idearikas ja tavoitteellinen tekijä Helsingistä.</p>
-  </section>
+<section id="about">
+  <h2>Tietoa minusta</h2>
+  <p>
+    Olen 21-vuotias tietojenkäsittelytieteiden opiskelija Helsingistä.
+    Minua motivoi teknologian, markkinoinnin ja luovuuden yhdistäminen
+    käytännön projekteiksi ja vaikuttavaksi sisällöksi.
+  </p>
+</section>
 
-  <section id="experience">
-    <h2>Työkokemus</h2>
+<section id="experience">
+  <h2>Työkokemus</h2>
+
+  <div class="item">
+    <h3>Sisällöntuottaja – Puolustusvoimien Pääesikunta</h3>
+    <span>2023–2024</span>
     <ul>
-      <li><strong>Kesäartisti (piano), Vaasan kaupunki</strong> – 2020<br>  
-      Toimin Vaasan kaupungin kesäartistina (1.6.-5.7.2020). Esiinnyin tapahtumissa ja kaupungin kaduilla yksin ja yhdessä muiden kesäartistien kanssa.</li>
-      <br><br>
-      <li><strong>Ravintolatyöntekijä, Hesburger Vaasa GW Galleria</strong> – 2022<br>  
-      Toimin ravintolatyöntekijänä (24.10.2022-29.6.2023). Kerrytin arvokasta kokemusta asiakaspalvelutehtävästä, josta on ollut paljon hyötyä myös tulevissa tehtävissä. Työssä korostui myös ruotsin kielen osaamisen tärkeys.</li>
-      <br><br>
-      <li><strong>Sisällöntuottaja, Puolustusvoimien Pääesikunta</strong> – 2023/2024<br>
-      Suoritin asepalvelukseni Pääesikunnan viestintäosaston mediatuotantotiimissä sisällöntuottajan roolissa (17.8.2023-8.3.2024). Yhdessä muun tiimin kanssa, olimme vastuussa Puolustusvoimien sosiaalisen median sisällöstä.</li>
-      <br><br>
-      <li><strong>Uinninvalvoja, Jukupark Kalajoki</strong> – 2024<br> 
-      Toimin Jukupark Kalajoen uinninvalvojana (17.6.-7.8.2024). Vastuualueitani olivat valvonta-, asiakaspalvelu- ja huoltotehtävät.</li>
-      <br><br>
-      <li><strong>Co-Founder, Tehdassaaren Pakohuone</strong> – 2024/2025<br> 
-      Keväällä 2024 perustimme kahden ystäväni kanssa oman yrityksen. Vastuualueitani olivat sisällöntuotanto, markkinointi, suunnittelu sekä pelien vetäminen. Projektimme toimi kahden kesän ajan, jonka aikana saimme paljon positiivista palautetta asiakkailtamme. </li>
-      <br><br>
-      <li><strong>Community Specialist, Padel X Helsinki</strong> – 2025<br> 
-      Vastasin Comminity Specialistin -tehtävästä (25.2.-16.4.2025). Tehtäviini kuului uuden keskuksen avajaisten järjestelyissä auttaminen, asiakaspalvelu keskuksella sekä anniskelu palvelutiskillä.</li>
-      <br><br>
-      <li><strong>UniCafen brändilähettiläs, Ylva</strong> – 2025/2026<br> 
-      Tällä hetkellä toimin UniCafen brändilähettiläänä. Tehtäväkuvaukseen kuuluu sisällöntuotanto UniCafen sosiaalisessa mediassa.</li>
-      
+      <li>Sosiaalisen median sisällöntuotanto</li>
+      <li>Video- ja kuvatuotanto</li>
+      <li>Työskentely osana mediatiimiä</li>
     </ul>
-  </section>
+  </div>
 
-  <section id="education">
-    <h2>Koulutus</h2>
+  <div class="item">
+    <h3>Co-Founder – Tehdassaaren Pakohuone</h3>
+    <span>2024–2025</span>
     <ul>
-      <li><strong>Peruskoulu, Onkilahden yhtenäiskoulu</strong> – 2011<br>
-      Suoritin peruskoulun musiikkiluokalla. Oppivelvollisuuteni suoritin vuonna 2020.</li>
-      <br><br>
-      <li><strong>Taiteen perusopetuksen laaja oppimäärä (piano), Kuula-opisto</strong> – 2015<br>
-      Suoritin laajanoppimäärän pianolla sekä musiikin teorian opinnot vuonna 2021. Tyylilajini vaihteli klassisen ja jazz/popin välillä.</li>
-      <br><br>
-      <li><strong>Ylioppilastutkinto, Vaasan Lyseon lukio</strong> – 2020<br>
-      Valmistuin ylioppilaaksi 3.6.2023. Tutkinnossani kirjoitin äidinkielen, pitkän matematiikan, pitkän englannin, historian sekä psykologian.</li>
-      <br><br>
-      <li><strong>Tietojenkäsittelytieteiden kandiohjelma, Helsingin yliopisto</strong> – 2024<br>
-      Opiskelen pääaineenani tietojenkäsittelytieteitä Helsingin yliopistossa. Sivuaineenani opiskelen taloustiedettä, jonka lisäksi opiskelen puolaa.</li>
-      <br><br>
-      <li><strong>Anniskelupassi, Perhon Liiketalousopisto</strong> – 2025<br>
-      Suoritin anniskelupassin 25.2.2025.</li>
-      
+      <li>Sisällöntuotanto ja markkinointi</li>
+      <li>Pelisuunnittelu ja asiakaskokemus</li>
+      <li>Yritystoiminnan kehittäminen</li>
     </ul>
-  </section>
-  
-  <section id="skills">
-    <h2>IT-taidot</h2>
-    <ul>
-      <li>Python, HTML, CSS, SQL, R</li>
-      <li>GitHub, VSC, TMC, RStudio</li>
-      <li>Instagram, YouTube, TikTok</li>
-      <li>Adobe Creative Cloud</li>
-      <li>Microsoft Office</li>
-      <li>Tekoäly (AI)</li>
-      <li>Windows, macOS</li>
-      <li>IOS, Android</li>
-      <li>CapCut</li>
-      <li>Canva</li>
-    </ul>
-  </section>
+  </div>
 
-  <section id="languages">
-    <h2>Kielitaito</h2>
+  <div class="item">
+    <h3>Community Specialist – Padel X Helsinki</h3>
+    <span>2025</span>
     <ul>
-      <li><strong>suomi</strong>: äidinkieli</li>
-      <li><strong>englanti</strong>: B2</li>
-      <li><strong>ruotsi</strong>: B1</li>
-      <li><strong>puola</strong>: A2</li>
+      <li>Asiakaspalvelu ja tapahtumat</li>
+      <li>Anniskelu ja avajaisten järjestelyt</li>
     </ul>
-  </section>
+  </div>
+</section>
 
-  <section id="hobbies">
-    <h2>Harrastukset</h2>
-    <ul>
-      <li>
-        Valo- ja videokuvaus
-      </li>
-      <li>
-        Pianonsoitto
-      </li>
-      <li>
-        Laskettelu
-      </li>
-      <li>
-        Vaeltaminen
-      </li>
-      <li>
-        Golf
-      </li>
-    </ul>
-  </section>
-  <section id="contact">
-    <h2>Sosiaalinen Media</h2>
+<section id="education">
+  <h2>Koulutus</h2>
 
-    <div class="social-links">
-      <a href="https://www.instagram.com/passijami/" target="_blank">Instagram</a>
-      <a href="https://www.tiktok.com/@passijami/" target="_blank">TikTok</a>
-      <a href="https://www.linkedin.com/in/jami-passi/" target="_blank">LinkedIn</a>
-    </div>
-  </section>
-  <footer>
-    <p>© 2025 Jami Passi – <a href="mailto:jamipassi.jp@gmail.com">Ota yhteyttä</a></p>
-  </footer>
+  <div class="item">
+    <h3>Tietojenkäsittelytieteet (Kandi)</h3>
+    <span>Helsingin yliopisto – 2024 →</span>
+    <p>Sivuaine: taloustiede, lisäksi puolan kieli</p>
+  </div>
+
+  <div class="item">
+    <h3>Ylioppilastutkinto</h3>
+    <span>Vaasan Lyseon lukio – 2023</span>
+  </div>
+</section>
+
+<section id="skills">
+  <h2>Osaaminen</h2>
+
+  <div class="skills-group">
+    <span class="skill">Python</span>
+    <span class="skill">HTML</span>
+    <span class="skill">CSS</span>
+    <span class="skill">SQL</span>
+    <span class="skill">GitHub</span>
+    <span class="skill">Adobe CC</span>
+    <span class="skill">Canva</span>
+    <span class="skill">CapCut</span>
+    <span class="skill">Instagram</span>
+    <span class="skill">TikTok</span>
+    <span class="skill">AI-työkalut</span>
+  </div>
+</section>
+
+<section id="languages">
+  <h2>Kielitaito</h2>
+  <ul class="clean-list">
+    <li><strong>Suomi</strong> – äidinkieli</li>
+    <li><strong>Englanti</strong> – B2</li>
+    <li><strong>Ruotsi</strong> – B1</li>
+    <li><strong>Puola</strong> – A2</li>
+  </ul>
+</section>
+
+<section id="contact">
+  <h2>Sosiaalinen media</h2>
+
+  <div class="social-links">
+    <a href="https://www.instagram.com/passijami/" target="_blank">Instagram</a>
+    <a href="https://www.tiktok.com/@passijami/" target="_blank">TikTok</a>
+    <a href="https://www.linkedin.com/in/jami-passi/" target="_blank">LinkedIn</a>
+  </div>
+</section>
+
+<footer>
+  <p>© 2025 Jami Passi • <a href="mailto:jamipassi.jp@gmail.com">jamipassi.jp@gmail.com</a></p>
+</footer>
+
 </body>
 </html>
+
 
 
 
