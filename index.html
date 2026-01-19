@@ -2,211 +2,138 @@
 <html lang="fi">
 <head>
   <meta charset="utf-8">
-  <title>Ansioluettelo – Jami Passi</title>
+  <title>Curriculum Vitae – Jami Passi</title>
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
 <header class="header">
-  <img src="jamikuva.jpg" alt="Kuva Jami Passista" class="profile-pic">
+
+  <!-- Language switch -->
+  <div class="language-switch">
+    <button onclick="setLanguage('fi')">FI</button>
+    <button onclick="setLanguage('en')">EN</button>
+  </div>
+
+  <img src="jamikuva.jpg" alt="Jami Passi" class="profile-pic">
 
   <div class="header-text">
     <h1>Jami Passi</h1>
-    <p class="tagline">
+
+    <p class="tagline"
+       data-fi="Tietojenkäsittelytieteet & Taloustiede • Sisällöntuotanto & Markkinointi • Musiikki & Piano"
+       data-en="Computer Science & Economics • Content Creation & Marketing • Music & Piano">
       Tietojenkäsittelytieteet & Taloustiede • Sisällöntuotanto & Markkinointi • Musiikki & Piano
     </p>
 
     <div class="header-links">
-      <a href="#contact" class="btn-primary">Ota yhteyttä</a>
-      <a href="https://www.linkedin.com/in/jami-passi/" target="_blank" class="btn-secondary">LinkedIn</a>
+      <a href="#contact" class="btn-primary"
+         data-fi="Ota yhteyttä"
+         data-en="Contact">
+         Ota yhteyttä
+      </a>
+      <a href="https://www.linkedin.com/in/jami-passi/" target="_blank" class="btn-secondary">
+        LinkedIn
+      </a>
     </div>
   </div>
 </header>
 
-<section id="about">
-  <h2>Tietoa minusta</h2>
-  <p>
-    Olen 21-vuotias tietojenkäsittelytieteiden opiskelija sekä sisällöntuotannosta,
-    markkinoinnista, taloustieteestä ja teknologiasta kiinnostunut idearikas ja
-    tavoitteellinen tekijä Helsingistä.
+<section>
+  <h2 data-fi="Tietoa minusta" data-en="About me">Tietoa minusta</h2>
+  <p
+    data-fi="Olen 21-vuotias tietojenkäsittelytieteiden opiskelija sekä sisällöntuotannosta, markkinoinnista, taloustieteestä ja teknologiasta kiinnostunut idearikas ja tavoitteellinen tekijä Helsingistä."
+    data-en="I am a 21-year-old computer science student from Helsinki with interests in content creation, marketing, economics and technology.">
+    Olen 21-vuotias tietojenkäsittelytieteiden opiskelija sekä sisällöntuotannosta, markkinoinnista, taloustieteestä ja teknologiasta kiinnostunut idearikas ja tavoitteellinen tekijä Helsingistä.
   </p>
 </section>
 
-<section id="experience">
-  <h2>Työkokemus</h2>
+<section>
+  <h2 data-fi="Työkokemus" data-en="Experience">Työkokemus</h2>
 
   <div class="item">
-    <h3>Brändilähettiläs – Ylva</h3>
+    <h3 data-fi="Brändilähettiläs – Ylva" data-en="Brand Ambassador – Ylva">
+      Brändilähettiläs – Ylva
+    </h3>
     <span>2025–2026</span>
     <ul>
-      <li>Sisällöntuotanto (UniCafe)</li>
-      <li>Videokuvaus, esiintyminen ja sosiaalinen media</li>
+      <li data-fi="Sisällöntuotanto ja sosiaalinen media" data-en="Content creation and social media">
+        Sisällöntuotanto ja sosiaalinen media
+      </li>
     </ul>
   </div>
 
   <div class="item">
-    <h3>Co-Founder – Tehdassaaren Pakohuone</h3>
+    <h3 data-fi="Co-Founder – Tehdassaaren Pakohuone" data-en="Co-Founder – Tehdassaari Escape Room">
+      Co-Founder – Tehdassaaren Pakohuone
+    </h3>
     <span>2024–2025</span>
     <ul>
-      <li>Sisällöntuotanto ja markkinointi</li>
-      <li>Pelisuunnittelu ja asiakaskokemus</li>
-      <li>Yritystoiminnan kehittäminen</li>
+      <li data-fi="Sisällöntuotanto ja markkinointi" data-en="Content creation and marketing">
+        Sisällöntuotanto ja markkinointi
+      </li>
+      <li data-fi="Pelisuunnittelu ja asiakaskokemus" data-en="Game design and customer experience">
+        Pelisuunnittelu ja asiakaskokemus
+      </li>
     </ul>
   </div>
-
-  <div class="item">
-    <h3>Community Specialist – Padel X Helsinki</h3>
-    <span>2025</span>
-    <ul>
-      <li>Asiakaspalvelu ja tapahtumat</li>
-      <li>Anniskelu ja avajaisten järjestelyt</li>
-    </ul>
-  </div>
-
-  <div class="item">
-    <h3>Uinninvalvoja – Jukupark Kalajoki</h3>
-    <span>2024</span>
-    <ul>
-      <li>Uinninvalvonta ja asiakaspalvelu</li>
-    </ul>
-  </div>
-
-  <div class="item">
-    <h3>Sisällöntuottaja – Puolustusvoimat</h3>
-    <span>2023–2024</span>
-    <ul>
-      <li>Sisällöntuotanto (Pääesikunta)</li>
-      <li>Tuotantojen suunnittelu ja toteutus</li>
-      <li>Video- ja kuvatuotanto</li>
-      <li>Sosiaalinen media</li>
-    </ul>
-  </div>
-
-  <div class="item">
-    <h3>Ravintolatyöntekijä – Hesburger Vaasa</h3>
-    <span>2022–2023</span>
-    <ul>
-      <li>Asiakaspalvelu ja tilausten valmistus</li>
-    </ul>
-  </div>
-
-  <div class="item">
-    <h3>Kesäartisti – Vaasan kaupunki</h3>
-    <span>2020</span>
-    <ul>
-      <li>Esiintyminen ja soittaminen (piano)</li>
-    </ul>
-  </div>
-  
 </section>
 
-<section id="education">
-  <h2>Koulutus</h2>
-
-  <div class="item">
-    <h3>Tietojenkäsittelytieteet – Helsingin yliopisto</h3>
-    <span>2024–2027</span>
-    <ul>
-      <li>Sivuaine: Taloustiede</li>
-    </ul>
-  </div>
-
-  <div class="item">
-    <h3>Anniskelupassi – Perho Liiketalousopisto</h3>
-    <span>2025</span>
-    <ul>
-      <li>Alkoholilainsäädännön koulutus</li>
-    </ul>
-  </div>
-
-  <div class="item">
-    <h3>Ylioppilastutkinto – Vaasan Lyseon lukio</h3>
-    <span>2020–2023</span>
-    <ul>
-      <li>Matematiikka (pitkä)</li>
-      <li>Englanti (pitkä)</li>
-      <li>Psykologia</li>
-      <li>Historia</li>
-      <li>Äidinkieli</li>
-    </ul>
-  </div>
-
-  <div class="item">
-    <h3>Perusopetus – Onkilahden yhteinäiskoulu</h3>
-    <span>2011–2020</span>
-    <ul>
-      <li>Musiikkiluokka</li>
-    </ul>
-  </div>
-
-</section>
-
-<section id="skills">
-  <h2>Osaaminen</h2>
-
+<section>
+  <h2 data-fi="Osaaminen" data-en="Skills">Osaaminen</h2>
   <div class="skills-group">
     <span class="skill">Python</span>
     <span class="skill">HTML</span>
     <span class="skill">CSS</span>
     <span class="skill">SQL</span>
-    <span class="skill">R</span>
-    <span class="skill">VSC</span>
-    <span class="skill">TMC</span>
-    <span class="skill">RStudio</span>
     <span class="skill">GitHub</span>
-    <span class="skill">Tekoäly (AI)</span>
-    <span class="skill">Microsoft Office</span>
-    <span class="skill">Windows</span>
-    <span class="skill">macOS</span>
-    <span class="skill">IOS</span>
-    <span class="skill">Android</span>
     <span class="skill">Adobe CC</span>
     <span class="skill">Canva</span>
-    <span class="skill">CapCut</span>
     <span class="skill">Instagram</span>
     <span class="skill">TikTok</span>
   </div>
 </section>
 
-<section id="languages">
-  <h2>Kielitaito</h2>
+<section>
+  <h2 data-fi="Kielitaito" data-en="Languages">Kielitaito</h2>
   <ul class="clean-list">
-    <li><strong>Suomi</strong> – äidinkieli</li>
-    <li><strong>Englanti</strong> – B2</li>
-    <li><strong>Ruotsi</strong> – B1</li>
-    <li><strong>Puola</strong> – A2</li>
+    <li data-fi="Suomi – äidinkieli" data-en="Finnish – Native">Suomi – äidinkieli</li>
+    <li data-fi="Englanti – B2" data-en="English – B2">Englanti – B2</li>
+    <li data-fi="Ruotsi – B1" data-en="Swedish – B1">Ruotsi – B1</li>
+    <li data-fi="Puola – A2" data-en="Polish – A2">Puola – A2</li>
   </ul>
 </section>
 
 <section id="contact">
-  <h2>Sosiaalinen media</h2>
-
-  <div class="social-links">
-    <a href="https://www.instagram.com/passijami/" target="_blank">Instagram</a>
-    <a href="https://www.tiktok.com/@passijami/" target="_blank">TikTok</a>
-  </div>
-</section>
-
-<section id="contact">
-  <h2>Ota yhteyttä</h2>
+  <h2 data-fi="Ota yhteyttä" data-en="Contact">Ota yhteyttä</h2>
 
   <div class="contact-box">
-    <p class="contact-item">
-      📞 <a href="tel:+358449834958">+358 44 983 4958</a>
-    </p>
-    <p class="contact-item">
-      ✉️ <a href="mailto:jamipassi.jp@gmail.com">jamipassi.jp@gmail.com</a>
-    </p>
+    <p class="contact-item">📞 <a href="tel:+358449834958">+358 44 983 4958</a></p>
+    <p class="contact-item">✉️ <a href="mailto:jamipassi.jp@gmail.com">jamipassi.jp@gmail.com</a></p>
   </div>
 </section>
 
 <footer>
   <p>© 2025 Jami Passi</p>
 </footer>
+
+<script>
+  function setLanguage(lang) {
+    document.documentElement.lang = lang;
+    document.querySelectorAll('[data-fi]').forEach(el => {
+      el.textContent = el.dataset[lang];
+    });
+    localStorage.setItem('language', lang);
+  }
+
+  const savedLang = localStorage.getItem('language');
+  if (savedLang) setLanguage(savedLang);
+</script>
 
 </body>
 </html>
