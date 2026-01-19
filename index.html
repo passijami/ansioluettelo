@@ -7,27 +7,42 @@
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <style>
+    .language-switch {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
+
+    .language-switch button {
+      margin-left: 6px;
+      padding: 6px 10px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+  </style>
 </head>
 
 <body>
 
 <header class="header">
 
-  <!-- Language switch -->
+  <!-- KIELENVAIHTO -->
   <div class="language-switch">
     <button onclick="setLanguage('fi')">FI</button>
     <button onclick="setLanguage('en')">EN</button>
   </div>
 
-  <img src="jamikuva.jpg" alt="Jami Passi" class="profile-pic">
+  <img src="jamikuva.jpg" alt="Kuva Jami Passista" class="profile-pic">
 
   <div class="header-text">
     <h1>Jami Passi</h1>
 
     <p class="tagline"
-       data-fi="Tietojenkäsittelytieteet & Taloustiede • Sisällöntuotanto & Markkinointi • Musiikki & Piano"
-       data-en="Computer Science & Economics • Content Creation & Marketing • Music & Piano">
+      data-fi="Tietojenkäsittelytieteet & Taloustiede • Sisällöntuotanto & Markkinointi • Musiikki & Piano"
+      data-en="Computer Science & Economics • Content Creation & Marketing • Music & Piano">
       Tietojenkäsittelytieteet & Taloustiede • Sisällöntuotanto & Markkinointi • Musiikki & Piano
     </p>
 
@@ -37,6 +52,7 @@
          data-en="Contact">
          Ota yhteyttä
       </a>
+
       <a href="https://www.linkedin.com/in/jami-passi/" target="_blank" class="btn-secondary">
         LinkedIn
       </a>
@@ -44,27 +60,25 @@
   </div>
 </header>
 
-<section>
+<section id="about">
   <h2 data-fi="Tietoa minusta" data-en="About me">Tietoa minusta</h2>
+
   <p
-    data-fi="Olen 21-vuotias tietojenkäsittelytieteiden opiskelija sekä sisällöntuotannosta, markkinoinnista, taloustieteestä ja teknologiasta kiinnostunut idearikas ja tavoitteellinen tekijä Helsingistä."
-    data-en="I am a 21-year-old computer science student from Helsinki with interests in content creation, marketing, economics and technology.">
-    Olen 21-vuotias tietojenkäsittelytieteiden opiskelija sekä sisällöntuotannosta, markkinoinnista, taloustieteestä ja teknologiasta kiinnostunut idearikas ja tavoitteellinen tekijä Helsingistä.
+    data-fi="Olen 21-vuotias tietojenkäsittelytieteiden opiskelija Helsingistä. Olen kiinnostunut sisällöntuotannosta, markkinoinnista, taloustieteestä ja teknologiasta."
+    data-en="I am a 21-year-old computer science student from Helsinki. I am interested in content creation, marketing, economics and technology.">
+    Olen 21-vuotias tietojenkäsittelytieteiden opiskelija Helsingistä. Olen kiinnostunut sisällöntuotannosta, markkinoinnista, taloustieteestä ja teknologiasta.
   </p>
 </section>
 
-<section>
-  <h2 data-fi="Työkokemus" data-en="Experience">Työkokemus</h2>
+<section id="experience">
+  <h2 data-fi="Työkokemus" data-en="Work Experience">Työkokemus</h2>
 
   <div class="item">
-    <h3 data-fi="Brändilähettiläs – Ylva" data-en="Brand Ambassador – Ylva">
-      Brändilähettiläs – Ylva
-    </h3>
+    <h3 data-fi="Brändilähettiläs – Ylva" data-en="Brand Ambassador – Ylva">Brändilähettiläs – Ylva</h3>
     <span>2025–2026</span>
     <ul>
-      <li data-fi="Sisällöntuotanto ja sosiaalinen media" data-en="Content creation and social media">
-        Sisällöntuotanto ja sosiaalinen media
-      </li>
+      <li data-fi="Sisällöntuotanto (UniCafe)" data-en="Content creation (UniCafe)">Sisällöntuotanto (UniCafe)</li>
+      <li data-fi="Videokuvaus ja sosiaalinen media" data-en="Video production and social media">Videokuvaus ja sosiaalinen media</li>
     </ul>
   </div>
 
@@ -74,18 +88,31 @@
     </h3>
     <span>2024–2025</span>
     <ul>
-      <li data-fi="Sisällöntuotanto ja markkinointi" data-en="Content creation and marketing">
-        Sisällöntuotanto ja markkinointi
-      </li>
-      <li data-fi="Pelisuunnittelu ja asiakaskokemus" data-en="Game design and customer experience">
-        Pelisuunnittelu ja asiakaskokemus
-      </li>
+      <li data-fi="Sisällöntuotanto ja markkinointi" data-en="Content creation and marketing">Sisällöntuotanto ja markkinointi</li>
+      <li data-fi="Pelisuunnittelu ja asiakaskokemus" data-en="Game design and customer experience">Pelisuunnittelu ja asiakaskokemus</li>
+      <li data-fi="Yritystoiminnan kehittäminen" data-en="Business development">Yritystoiminnan kehittäminen</li>
     </ul>
   </div>
 </section>
 
-<section>
+<section id="education">
+  <h2 data-fi="Koulutus" data-en="Education">Koulutus</h2>
+
+  <div class="item">
+    <h3 data-fi="Tietojenkäsittelytieteet – Helsingin yliopisto"
+        data-en="Computer Science – University of Helsinki">
+      Tietojenkäsittelytieteet – Helsingin yliopisto
+    </h3>
+    <span>2024–2027</span>
+    <ul>
+      <li data-fi="Sivuaine: Taloustiede" data-en="Minor: Economics">Sivuaine: Taloustiede</li>
+    </ul>
+  </div>
+</section>
+
+<section id="skills">
   <h2 data-fi="Osaaminen" data-en="Skills">Osaaminen</h2>
+
   <div class="skills-group">
     <span class="skill">Python</span>
     <span class="skill">HTML</span>
@@ -94,12 +121,12 @@
     <span class="skill">GitHub</span>
     <span class="skill">Adobe CC</span>
     <span class="skill">Canva</span>
-    <span class="skill">Instagram</span>
     <span class="skill">TikTok</span>
+    <span class="skill">Instagram</span>
   </div>
 </section>
 
-<section>
+<section id="languages">
   <h2 data-fi="Kielitaito" data-en="Languages">Kielitaito</h2>
   <ul class="clean-list">
     <li data-fi="Suomi – äidinkieli" data-en="Finnish – Native">Suomi – äidinkieli</li>
@@ -122,6 +149,7 @@
   <p>© 2025 Jami Passi</p>
 </footer>
 
+<!-- KIELENVAIHDON SCRIPT -->
 <script>
   function setLanguage(lang) {
     document.documentElement.lang = lang;
@@ -132,11 +160,15 @@
   }
 
   const savedLang = localStorage.getItem('language');
-  if (savedLang) setLanguage(savedLang);
+  if (savedLang) {
+    setLanguage(savedLang);
+  }
 </script>
 
 </body>
 </html>
+
+
 
 
 
