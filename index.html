@@ -2,277 +2,334 @@
 <html lang="fi">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Curriculum Vitae – Jami Passi</title>
+  <meta name="description" content="Jami Passi – CV / Portfolio">
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="[fonts.googleapis.com](https://fonts.googleapis.com)">
+  <link rel="preconnect" href="[fonts.gstatic.com](https://fonts.gstatic.com)" crossorigin>
+  <link href="[fonts.googleapis.com](https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@600;700;800&display=swap)" rel="stylesheet">
 
   <link rel="stylesheet" href="css/styles.css">
-
-  <style>
-    .language-switch {
-      position: absolute;
-      top: 20px;
-      right: 20px;
-    }
-
-    .language-switch button {
-      margin-left: 6px;
-      padding: 6px 10px;
-      font-weight: 600;
-      cursor: pointer;
-    }
-  </style>
 </head>
-
 <body>
+  <div class="page-shell">
 
-<header class="header">
+    <header class="topbar">
+      <div class="topbar-inner">
+        <a href="#" class="brand">Jami Passi</a>
 
-  <!-- KIELENVAIHTO -->
-  <div class="language-switch">
-    <button onclick="setLanguage('fi')">FI</button>
-    <button onclick="setLanguage('en')">EN</button>
+        <nav class="nav">
+          <a href="#about" data-fi="Tietoa" data-en="About">Tietoa</a>
+          <a href="#experience" data-fi="Kokemus" data-en="Experience">Kokemus</a>
+          <a href="#education" data-fi="Koulutus" data-en="Education">Koulutus</a>
+          <a href="#skills" data-fi="Osaaminen" data-en="Skills">Osaaminen</a>
+          <a href="#contact" data-fi="Yhteys" data-en="Contact">Yhteys</a>
+        </nav>
+
+        <div class="language-switch" role="group" aria-label="Language switch">
+          <button type="button" class="lang-btn active" data-lang="fi">FI</button>
+          <button type="button" class="lang-btn" data-lang="en">EN</button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-bg"></div>
+
+        <div class="hero-content">
+          <div class="hero-image-wrap">
+            <img src="jamikuva.jpg" alt="Kuva Jami Passista" class="profile-pic">
+          </div>
+
+          <div class="hero-text">
+            <p class="eyebrow" data-fi="Curriculum Vitae" data-en="Curriculum Vitae">Curriculum Vitae</p>
+            <h1>Jami Passi</h1>
+
+            <p class="tagline"
+              data-fi="Tietojenkäsittelytiede & Taloustiede • Sisällöntuotanto & Markkinointi • Musiikki & Piano"
+              data-en="Computer Science & Economics • Content Creation & Marketing • Music & Piano">
+              Tietojenkäsittelytiede & Taloustiede • Sisällöntuotanto & Markkinointi • Musiikki & Piano
+            </p>
+
+            <div class="hero-actions">
+              <a href="#contact" class="btn btn-primary"
+                 data-fi="Ota yhteyttä"
+                 data-en="Contact">
+                Ota yhteyttä
+              </a>
+
+              <a href="[linkedin.com](https://www.linkedin.com/in/jami-passi/)" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                LinkedIn
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="card section-card">
+        <div class="section-heading">
+          <p class="section-kicker" data-fi="Profiili" data-en="Profile">Profiili</p>
+          <h2 data-fi="Tietoa minusta" data-en="About me">Tietoa minusta</h2>
+        </div>
+
+        <p
+          data-fi="Olen 21-vuotias tietojenkäsittelytieteen opiskelija sekä sisällöntuotannosta, markkinoinnista, taloustieteestä ja teknologiasta kiinnostunut idearikas ja tavoitteellinen tekijä Helsingistä."
+          data-en="I am a 21-year-old Computer Science student from Helsinki, and a goal-oriented individual with a passion for content creation, marketing, economics, and technology.">
+          Olen 21-vuotias tietojenkäsittelytieteen opiskelija sekä sisällöntuotannosta, markkinoinnista, taloustieteestä ja teknologiasta kiinnostunut idearikas ja tavoitteellinen tekijä Helsingistä.
+        </p>
+      </section>
+
+      <section id="experience" class="card section-card">
+        <div class="section-heading">
+          <p class="section-kicker" data-fi="Tausta" data-en="Background">Tausta</p>
+          <h2 data-fi="Työkokemus" data-en="Experience">Työkokemus</h2>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline-item">
+            <div class="timeline-year">2025–2026</div>
+            <div class="timeline-content">
+              <h3 data-fi="Brändilähettiläs – Ylva" data-en="Brand Ambassador – Ylva">Brändilähettiläs – Ylva</h3>
+              <ul>
+                <li data-fi="Sisällöntuotanto (UniCafe)" data-en="Content creation (UniCafe)">Sisällöntuotanto (UniCafe)</li>
+                <li data-fi="Videokuvaus ja sosiaalinen media" data-en="Video production and social media">Videokuvaus ja sosiaalinen media</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-year">2024–2025</div>
+            <div class="timeline-content">
+              <h3 data-fi="Co-Founder – Tehdassaaren Pakohuone" data-en="Co-Founder – Tehdassaari Escape Room">
+                Co-Founder – Tehdassaaren Pakohuone
+              </h3>
+              <ul>
+                <li data-fi="Sisällöntuotanto ja markkinointi" data-en="Content creation and marketing">Sisällöntuotanto ja markkinointi</li>
+                <li data-fi="Pelisuunnittelu ja asiakaskokemus" data-en="Game design and customer experience">Pelisuunnittelu ja asiakaskokemus</li>
+                <li data-fi="Yritystoiminnan kehittäminen" data-en="Business development">Yritystoiminnan kehittäminen</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-year">2025</div>
+            <div class="timeline-content">
+              <h3 data-fi="Community Specialist – Padel X Helsinki" data-en="Community Specialist – Padel X Helsinki">Community Specialist – Padel X Helsinki</h3>
+              <ul>
+                <li data-fi="Asiakaspalvelu ja tapahtumat" data-en="Customer service and events">Asiakaspalvelu ja tapahtumat</li>
+                <li data-fi="Anniskelu ja avajaisten järjestelyt" data-en="Customer service and opening arrangements">Anniskelu ja avajaisten järjestelyt</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-year">2024</div>
+            <div class="timeline-content">
+              <h3 data-fi="Uinninvalvoja – Jukupark Kalajoki" data-en="Lifeguard – Jukupark Kalajoki">Uinninvalvoja – Jukupark Kalajoki</h3>
+              <ul>
+                <li data-fi="Uinninvalvonta ja asiakaspalvelu" data-en="Lifeguarding and customer service">Uinninvalvonta ja asiakaspalvelu</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-year">2023–2024</div>
+            <div class="timeline-content">
+              <h3 data-fi="Sisällöntuottaja – Puolustusvoimat" data-en="Content Creator – The Finnish Defence Forces">Sisällöntuottaja – Puolustusvoimat</h3>
+              <ul>
+                <li data-fi="Sisällöntuotanto (Pääesikunta)" data-en="Content creation (The Defence Command Finland)">Sisällöntuotanto (Pääesikunta)</li>
+                <li data-fi="Tuotantojen suunnittelu ja toteutus" data-en="Planning and execution of productions">Tuotantojen suunnittelu ja toteutus</li>
+                <li data-fi="Video- ja kuvatuotanto" data-en="Audio-visual content production">Video- ja kuvatuotanto</li>
+                <li data-fi="Sosiaalinen media" data-en="Social media">Sosiaalinen media</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-year">2022–2023</div>
+            <div class="timeline-content">
+              <h3 data-fi="Ravintolatyöntekijä – Hesburger Vaasa" data-en="Restaurant Worker – Hesburger Vaasa">Ravintolatyöntekijä – Hesburger Vaasa</h3>
+              <ul>
+                <li data-fi="Asiakaspalvelu ja tilausten valmistus" data-en="Customer service and preparing orders">Asiakaspalvelu ja tilausten valmistus</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-year">2020</div>
+            <div class="timeline-content">
+              <h3 data-fi="Kesäartisti – Vaasan kaupunki" data-en="Performer – City of Vaasa">Kesäartisti – Vaasan kaupunki</h3>
+              <ul>
+                <li data-fi="Esiintyminen ja soittaminen (piano)" data-en="Performing as a pianist">Esiintyminen ja soittaminen (piano)</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="education" class="card section-card">
+        <div class="section-heading">
+          <p class="section-kicker" data-fi="Opinnot" data-en="Studies">Opinnot</p>
+          <h2 data-fi="Koulutus" data-en="Education">Koulutus</h2>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline-item">
+            <div class="timeline-year">2024–2027</div>
+            <div class="timeline-content">
+              <h3 data-fi="Luonnontieteiden kandidaatti – Helsingin yliopisto"
+                  data-en="Bachelor of Science – University of Helsinki">
+                Luonnontieteiden kandidaatti – Helsingin yliopisto
+              </h3>
+              <ul>
+                <li data-fi="Pääaine: Tietojenkäsittelytiede" data-en="Major: Computer Science">Pääaine: Tietojenkäsittelytiede</li>
+                <li data-fi="Sivuaine: Taloustiede" data-en="Minor: Economics">Sivuaine: Taloustiede</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-year">2025</div>
+            <div class="timeline-content">
+              <h3 data-fi="Anniskelupassi – Perho Liiketalousopisto"
+                  data-en="Alcohol Proficiency Certificate – Perho Liiketalousopisto">
+                Anniskelupassi – Perho Liiketalousopisto
+              </h3>
+              <ul>
+                <li data-fi="Alkoholilainsäädännön koulutus" data-en="Alcohol Legislation Training">Alkoholilainsäädännön koulutus</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-year">2020–2023</div>
+            <div class="timeline-content">
+              <h3 data-fi="Ylioppilastutkinto – Vaasan Lyseon lukio"
+                  data-en="The Matriculation Examination – Vaasa Lyceum High School">
+                Ylioppilastutkinto – Vaasan Lyseon lukio
+              </h3>
+              <ul>
+                <li data-fi="Matematiikka (pitkä)" data-en="Mathematics">Matematiikka (pitkä)</li>
+                <li data-fi="Englanti (pitkä)" data-en="English">Englanti (pitkä)</li>
+                <li data-fi="Psykologia" data-en="Psychology">Psykologia</li>
+                <li data-fi="Historia" data-en="History">Historia</li>
+                <li data-fi="Äidinkieli" data-en="Finnish">Äidinkieli</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-year">2011–2020</div>
+            <div class="timeline-content">
+              <h3 data-fi="Perusopetus – Onkilahden yhtenäiskoulu"
+                  data-en="Basic Education – Onkilahti School">
+                Perusopetus – Onkilahden yhtenäiskoulu
+              </h3>
+              <ul>
+                <li data-fi="Musiikkiluokka" data-en="Music class">Musiikkiluokka</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="skills" class="card section-card">
+        <div class="section-heading">
+          <p class="section-kicker" data-fi="Työkalut" data-en="Toolkit">Työkalut</p>
+          <h2 data-fi="Osaaminen" data-en="Skills">Osaaminen</h2>
+        </div>
+
+        <div class="skills-group">
+          <span class="skill">Python</span>
+          <span class="skill">HTML</span>
+          <span class="skill">CSS</span>
+          <span class="skill">SQL</span>
+          <span class="skill">R</span>
+          <span class="skill">VSC</span>
+          <span class="skill">TMC</span>
+          <span class="skill">RStudio</span>
+          <span class="skill">GitHub</span>
+          <span class="skill">MATLAB</span>
+          <span class="skill">AI</span>
+          <span class="skill">Microsoft Office</span>
+          <span class="skill">Windows</span>
+          <span class="skill">macOS</span>
+          <span class="skill">IOS</span>
+          <span class="skill">Android</span>
+          <span class="skill">Adobe CC</span>
+          <span class="skill">Canva</span>
+          <span class="skill">CapCut</span>
+          <span class="skill">Instagram</span>
+          <span class="skill">TikTok</span>
+          <span class="skill">YouTube</span>
+        </div>
+      </section>
+
+      <section id="languages" class="card section-card">
+        <div class="section-heading">
+          <p class="section-kicker" data-fi="Viestintä" data-en="Communication">Viestintä</p>
+          <h2 data-fi="Kielitaito" data-en="Languages">Kielitaito</h2>
+        </div>
+
+        <ul class="language-list">
+          <li data-fi="🇫🇮 Suomi – äidinkieli" data-en="🇫🇮 Finnish – Native">Suomi – äidinkieli</li>
+          <li data-fi="🇺🇸 Englanti – B2" data-en="🇺🇸 English – B2">Englanti – B2</li>
+          <li data-fi="🇸🇪 Ruotsi – B1" data-en="🇸🇪 Swedish – B1">Ruotsi – B1</li>
+          <li data-fi="🇵🇱 Puola – A2" data-en="🇵🇱 Polish – A2">Puola – A2</li>
+        </ul>
+      </section>
+
+      <section id="contact" class="card section-card contact-section">
+        <div class="section-heading center">
+          <p class="section-kicker" data-fi="Yhteydenotto" data-en="Get in touch">Yhteydenotto</p>
+          <h2 data-fi="Ota yhteyttä" data-en="Contact">Ota yhteyttä</h2>
+        </div>
+
+        <div class="contact-box">
+          <a class="contact-item" href="tel:+358449834958">
+            <span class="contact-icon">📞</span>
+            <span>+358 44 983 4958</span>
+          </a>
+          <a class="contact-item" href="mailto:jamipassi.jp@gmail.com">
+            <span class="contact-icon">✉️</span>
+            <span>jamipassi.jp@gmail.com</span>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© 2025 Jami Passi</p>
+    </footer>
   </div>
 
-  <img src="jamikuva.jpg" alt="Kuva Jami Passista" class="profile-pic">
+  <script>
+    function setLanguage(lang) {
+      document.documentElement.lang = lang;
 
-  <div class="header-text">
-    <h1>Jami Passi</h1>
+      document.querySelectorAll("[data-fi]").forEach((el) => {
+        if (el.dataset[lang]) {
+          el.textContent = el.dataset[lang];
+        }
+      });
 
-    <p class="tagline"
-      data-fi="Tietojenkäsittelytiede & Taloustiede • Sisällöntuotanto & Markkinointi • Musiikki & Piano"
-      data-en="Computer Science & Economics • Content Creation & Marketing • Music & Piano">
-      Tietojenkäsittelytiede & Taloustiede • Sisällöntuotanto & Markkinointi • Musiikki & Piano
-    </p>
+      document.querySelectorAll(".lang-btn").forEach((btn) => {
+        btn.classList.toggle("active", btn.dataset.lang === lang);
+      });
 
-    <div class="header-links">
-      <a href="#contact" class="btn-primary"
-         data-fi="Ota yhteyttä"
-         data-en="Contact">
-         Ota yhteyttä
-      </a>
+      localStorage.setItem("language", lang);
+    }
 
-      <a href="https://www.linkedin.com/in/jami-passi/" target="_blank" class="btn-secondary">
-        LinkedIn
-      </a>
-    </div>
-  </div>
-</header>
-
-<section id="about">
-  <h2 data-fi="Tietoa minusta" data-en="About me">Tietoa minusta</h2>
-
-  <p
-    data-fi="Olen 21-vuotias tietojenkäsittelytieteen opiskelija sekä sisällöntuotannosta, markkinoinnista, taloustieteestä ja teknologiasta kiinnostunut idearikas ja tavoitteellinen tekijä Helsingistä."
-    data-en="I am a 21-year-old Computer Science student from Helsinki, and a goal-oriented individual with a passion for content creation, marketing, economics, and technology.">
-    Olen 21-vuotias tietojenkäsittelytieteen opiskelija sekä sisällöntuotannosta, markkinoinnista, taloustieteestä ja teknologiasta kiinnostunut idearikas ja tavoitteellinen tekijä Helsingistä.
-
-  </p>
-</section>
-
-<section id="experience">
-  <h2 data-fi="Työkokemus" data-en="Experience">Työkokemus</h2>
-
-  <div class="item">
-    <span>2025–2026</span>
-    <h3 data-fi="Brändilähettiläs – Ylva" data-en="Brand Ambassador – Ylva">Brändilähettiläs – Ylva</h3>
-    <ul>
-      <li data-fi="Sisällöntuotanto (UniCafe)" data-en="Content creation (UniCafe)">Sisällöntuotanto (UniCafe)</li>
-      <li data-fi="Videokuvaus ja sosiaalinen media" data-en="Video production and social media">Videokuvaus ja sosiaalinen media</li>
-    </ul>
-  </div>
-
-  <div class="item">
-    <span>2024–2025</span>
-    <h3 data-fi="Co-Founder – Tehdassaaren Pakohuone" data-en="Co-Founder – Tehdassaari Escape Room">
-      Co-Founder – Tehdassaaren Pakohuone
-    </h3>
-    <ul>
-      <li data-fi="Sisällöntuotanto ja markkinointi" data-en="Content creation and marketing">Sisällöntuotanto ja markkinointi</li>
-      <li data-fi="Pelisuunnittelu ja asiakaskokemus" data-en="Game design and customer experience">Pelisuunnittelu ja asiakaskokemus</li>
-      <li data-fi="Yritystoiminnan kehittäminen" data-en="Business development">Yritystoiminnan kehittäminen</li>
-    </ul>
-  </div>
-
-  <div class="item">
-    <span>2025</span>
-    <h3 data-fi="Community Specialist – Padel X Helsinki" data-en="Community Specialist – Padel X Helsinki">Community Specialist – Padel X Helsinki</h3>
-    <ul>
-      <li data-fi="Asiakaspalvelu ja tapahtumat" data-en="Customer service and events">Asiakaspalvelu ja tapahtumat</li>
-      <li data-fi="Anniskelu ja avajaisten järjestelyt" data-en="Customer service and opening arrangements">Anniskelu ja avajaisten järjestelyt</li>
-    </ul>
-  </div>
-
-  <div class="item">
-    <span>2024</span>
-    <h3 data-fi="Uinninvalvoja – Jukupark Kalajoki" data-en="Lifeguard – Jukupark Kalajoki">Uinninvalvoja – Jukupark Kalajoki</h3>
-    <ul>
-      <li data-fi="Uinninvalvonta ja asiakaspalvelu" data-en="Lifeguarding and customer service">Uinninvalvonta ja asiakaspalvelu</li>
-    </ul>
-  </div>
-
-  <div class="item">
-    <span>2023–2024</span>
-    <h3 data-fi="Sisällöntuottaja – Puolustusvoimat" data-en="Content Creator – The Finnish Defence Forces">Sisällöntuottaja – Puolustusvoimat</h3>
-    <ul>
-      <li data-fi="Sisällöntuotanto (Pääesikunta)" data-en="Content creation (The Defence Command Finland)">Sisällöntuotanto (Pääesikunta)</li>
-      <li data-fi="Tuotantojen suunnittelu ja toteutus" data-en="Planning and execution of productions">Tuotantojen suunnittelu ja toteutus</li>
-      <li data-fi="Video- ja kuvatuotanto" data-en="Audio-visual content production">Video- ja kuvatuotanto</li>
-      <li data-fi="Sosiaalinen media" data-en="Social media">Sosiaalinen media</li>
-    </ul>
-  </div>
-
-  <div class="item">
-    <span>2022–2023</span>
-    <h3 data-fi="Ravintolatyöntekijä – Hesburger Vaasa" data-en="Restaurant Worker – Hesburger Vaasa">Ravintolatyöntekijä – Hesburger Vaasa</h3>
-    <ul>
-      <li data-fi="Asiakaspalvelu ja tilausten valmistus" data-en="Customer service and preparing orders">Asiakaspalvelu ja tilausten valmistus</li>
-    </ul>
-  </div>
-
-  <div class="item">
-    <span>2020</span>
-    <h3 data-fi="Kesäartisti – Vaasan kaupunki" data-en="Performer – City of Vaasa">Kesäartisti – Vaasan kaupunki</h3>
-    <ul>
-      <li data-fi="Esiintyminen ja soittaminen (piano)" data-en="Performing as a pianist">Esiintyminen ja soittaminen (piano)</li>
-    </ul>
-  </div>
-  
-</section>
-
-<section id="education">
-  <h2 data-fi="Koulutus" data-en="Education">Koulutus</h2>
-
-  <div class="item">
-    <span>2024–2027</span>
-    <h3 data-fi="Luonnontieteiden kandidaatti – Helsingin yliopisto"
-        data-en="Bachelor of Science – University of Helsinki">
-      Luonnontieteiden kandidaatti – Helsingin yliopisto
-    </h3>
-    <ul>
-      <li data-fi="Pääaine: Tietojenkäsittelytiede" data-en="Major: Computer Science">Pääaine: Tietojenkäsittelytiede</li>
-      <li data-fi="Sivuaine: Taloustiede" data-en="Minor: Economics">Sivuaine: Taloustiede</li>
-    </ul>
-  </div>
-
-  <div class="item">
-    <span>2025</span>
-    <h3 data-fi="Anniskelupassi – Perho Liiketalousopisto"
-        data-en="Alcohol Proficiency Certificate – Perho Liiketalousopisto">
-      Anniskelupassi – Perho Liiketalousopisto
-    </h3>
-    <ul>
-      <li data-fi="Alkoholilainsäädännön koulutus" data-en="Alcohol Legislation Training">Alkoholilainsäädännön koulutus</li>
-    </ul>
-  </div>
-
-  <div class="item">
-    <span>2020–2023</span>
-    <h3 data-fi="Ylioppilastutkinto – Vaasan Lyseon lukio"
-        data-en="The Matriculation Examination – Vaasa Lyceum High School">
-      Ylioppilastutkinto – Vaasan Lyseon lukio
-    </h3>
-    <ul>
-      <li data-fi="Matematiikka (pitkä)" data-en="Mathematics">Matematiikka (pitkä)</li>
-      <li data-fi="Englanti (pitkä)" data-en="English">Englanti (pitkä)</li>
-      <li data-fi="Psykologia" data-en="Psychology">Psykologia</li>
-      <li data-fi="Historia" data-en="History">Historia</li>
-      <li data-fi="Äidinkieli" data-en="Finnish">Äidinkieli</li>
-    </ul>
-  </div>
-
-  <div class="item">
-    <span>2011–2020</span>
-    <h3 data-fi="Perusopetus – Onkilahden yhtenäiskoulu"
-        data-en="Basic Education – Onkilahti School">
-      Perusopetus – Onkilahden yhtenäiskoulu
-    </h3>
-    <ul>
-      <li data-fi="Musiikkiluokka" data-en="Music class">Musiikkiluokka</li>
-    </ul>
-  </div>
-
-</section>
-
-<section id="skills">
-  <h2 data-fi="Osaaminen" data-en="Skills">Osaaminen</h2>
-
-  <div class="skills-group">
-    <span class="skill">Python</span>
-    <span class="skill">HTML</span>
-    <span class="skill">CSS</span>
-    <span class="skill">SQL</span>
-    <span class="skill">R</span>
-    <span class="skill">VSC</span>
-    <span class="skill">TMC</span>
-    <span class="skill">RStudio</span>
-    <span class="skill">GitHub</span>
-    <span class="skill">MATLAB</span>
-    <span class="skill">AI</span>
-    <span class="skill">Microsoft Office</span>
-    <span class="skill">Windows</span>
-    <span class="skill">macOS</span>
-    <span class="skill">IOS</span>
-    <span class="skill">Android</span>
-    <span class="skill">Adobe CC</span>
-    <span class="skill">Canva</span>
-    <span class="skill">CapCut</span>
-    <span class="skill">Instagram</span>
-    <span class="skill">TikTok</span>
-    <span class="skill">YouTube</span>
-  </div>
-</section>
-
-<section id="languages">
-  <h2 data-fi="Kielitaito" data-en="Languages">Kielitaito</h2>
-  <ul class="clean-list">
-    <li data-fi="🇫🇮 Suomi – äidinkieli" data-en="🇫🇮 Finnish – Native">Suomi – äidinkieli</li>
-    <li data-fi="🇺🇸 Englanti – B2" data-en="🇺🇸 English – B2">Englanti – B2</li>
-    <li data-fi="🇸🇪 Ruotsi – B1" data-en="🇸🇪 Swedish – B1">Ruotsi – B1</li>
-    <li data-fi="🇵🇱 Puola – A2" data-en="🇵🇱 Polish – A2">Puola – A2</li>
-  </ul>
-</section>
-
-<section id="contact">
-  <h2 data-fi="Ota yhteyttä" data-en="Contact">Ota yhteyttä</h2>
-
-  <div class="contact-box">
-    <p class="contact-item">📞 <a href="tel:+358449834958">+358 44 983 4958</a></p>
-    <p class="contact-item">✉️ <a href="mailto:jamipassi.jp@gmail.com">jamipassi.jp@gmail.com</a></p>
-  </div>
-</section>
-
-<footer>
-  <p>© 2025 Jami Passi</p>
-</footer>
-
-<!-- KIELENVAIHDON SCRIPT -->
-<script>
-  function setLanguage(lang) {
-    document.documentElement.lang = lang;
-    document.querySelectorAll('[data-fi]').forEach(el => {
-      el.textContent = el.dataset[lang];
+    document.querySelectorAll(".lang-btn").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        setLanguage(btn.dataset.lang);
+      });
     });
-    localStorage.setItem('language', lang);
-  }
 
-  const savedLang = localStorage.getItem('language');
-  if (savedLang) {
+    const savedLang = localStorage.getItem("language") || "fi";
     setLanguage(savedLang);
-  }
-</script>
-
+  </script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
